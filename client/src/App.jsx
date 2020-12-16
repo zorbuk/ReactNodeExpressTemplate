@@ -45,8 +45,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <h1>🍾👏👏</h1>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            [Frontend] Edita <code>src/App.jsx</code> y guarda para actualizar
+          </p>
+          <p>
+            [Backend] Edita <code>server.js</code> y guarda para actualizar.
+          </p>
+          <p>
+            Las dependecias como estilos, etc... van en <code>src/index.js</code>.
           </p>
           <a
             className="App-link"
@@ -54,20 +61,20 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            👉 Documentación React
           </a>
         </header>
         <p>{this.state.response}</p>
         <form onSubmit={this.handleSubmit}>
           <p>
-            <strong>Post to Server:</strong>
+            <strong>Post al Servidor:</strong>
           </p>
           <input
             type="text"
             value={this.state.post}
             onChange={e => this.setState({ post: e.target.value })}
           />
-          <button type="submit">Submit</button>
+          <button type="submit">Post</button>
         </form>
         <p>{this.state.responseToPost}</p>
       </div>
